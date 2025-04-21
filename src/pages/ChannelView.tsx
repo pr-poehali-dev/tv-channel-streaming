@@ -117,6 +117,24 @@ const ChannelView = () => {
     }
   };
   
+  // Получаем тестовое видео на основе ID канала
+  const getTestVideo = (id: number) => {
+    const testVideos = [
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerEscapes.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerFun.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerJoyrides.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerMeltdowns.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/Sintel.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/SubaruOutbackOnStreetAndDirt.mp4",
+      "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/TearsOfSteel.mp4"
+    ];
+    
+    return testVideos[id % testVideos.length];
+  };
+  
   if (!channel) {
     return (
       <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center">
@@ -136,11 +154,12 @@ const ChannelView = () => {
         <video
           ref={videoRef}
           className="w-full h-full object-contain"
-          src={channel.videoUrl || "https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"}
+          src={getTestVideo(channel.id)}
           onClick={togglePlay}
           onTimeUpdate={handleTimeUpdate}
           onLoadedMetadata={handleLoadedMetadata}
           autoPlay
+          controls={false}
         />
         
         {/* Инфо о канале при наведении */}

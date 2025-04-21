@@ -17,8 +17,7 @@ export const channelsData: Channel[] = [
     description: "Главный федеральный канал России с новостями, фильмами и шоу",
     category: "news",
     program: "Новости",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video1.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 2,
@@ -26,8 +25,7 @@ export const channelsData: Channel[] = [
     description: "Круглосуточный канал для любителей японской анимации",
     category: "anime",
     program: "Атака титанов",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video2.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 3,
@@ -35,8 +33,7 @@ export const channelsData: Channel[] = [
     description: "Самые популярные и новые фильмы",
     category: "films",
     program: "Мстители: Финал",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video3.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 4,
@@ -44,8 +41,7 @@ export const channelsData: Channel[] = [
     description: "Спортивные трансляции и обзоры в прямом эфире",
     category: "sports",
     program: "Футбол: Обзор матчей",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video4.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 5,
@@ -53,8 +49,7 @@ export const channelsData: Channel[] = [
     description: "Развлекательные программы для детей разного возраста",
     category: "kids",
     program: "Маша и Медведь",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video5.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 6,
@@ -62,8 +57,7 @@ export const channelsData: Channel[] = [
     description: "Познавательные документальные фильмы о природе и науке",
     category: "documentary",
     program: "Мир океанов",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video6.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 7,
@@ -71,8 +65,7 @@ export const channelsData: Channel[] = [
     description: "Лучшие сериалы со всего мира",
     category: "series",
     program: "Игра престолов",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video7.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 8,
@@ -80,8 +73,7 @@ export const channelsData: Channel[] = [
     description: "Музыкальный канал с клипами и шоу",
     category: "music",
     program: "Топ-10 хитов",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video8.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 9,
@@ -89,8 +81,7 @@ export const channelsData: Channel[] = [
     description: "Новости со всего мира на английском языке",
     category: "news",
     program: "Breaking News",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video9.mp4"
+    thumbnail: "/placeholder.svg"
   },
   {
     id: 10,
@@ -98,8 +89,7 @@ export const channelsData: Channel[] = [
     description: "Канал с боевиками и триллерами",
     category: "films",
     program: "Крепкий орешек",
-    thumbnail: "/placeholder.svg",
-    videoUrl: "https://example.com/video10.mp4"
+    thumbnail: "/placeholder.svg"
   },
   // Добавляем еще 20 каналов для демонстрации
   ...Array.from({ length: 20 }).map((_, index) => {
@@ -113,8 +103,7 @@ export const channelsData: Channel[] = [
       description: `Описание канала ${id}`,
       category: categories[categoryIndex],
       program: `Программа ${id}`,
-      thumbnail: "/placeholder.svg",
-      videoUrl: `https://example.com/video${id}.mp4`
+      thumbnail: "/placeholder.svg"
     };
   })
 ];
